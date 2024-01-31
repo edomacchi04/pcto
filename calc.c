@@ -4,25 +4,32 @@ void calcolatrice()
 {
    
     int x;
-    int;
-    char ;
+    int y;
+    char a;
     
-    printf("inserisci una letteraaaa\n");
-    scanf("%c", &letteraaaa);
- 
- 
- if(   'a' || letteraaaa == 'e' || letteraaaa == 'i' || letteraaaa == 'o' || letteraaaa == 'u' )
+    printf("inserisci due variabili\n");
+    scanf("%d", &x);
+    scanf("%d", &y);
+    printf(" scegli tra le 4 operazioni (+)(-)(*)(/)");
+    scanf(" %c", &a);
+    if( a == '+'  )
     {
-        printf("è una di quelle che chiamano vocali\n");
+        printf("il risultato è %d\n" , x + y);
     }
-    else 
-    {   
-        printf("spiazze ritenta\n");
+    
+    if( a == '-'  )
+    {
+        printf("il risultato è %d\n" , x - y);
     }
-
+    if( a == '*'  )
+    {
+        printf("il risultato è %d\n" , x * y);
+    }
+    if( a == '/'  )
+    {
+        printf("il risultato è %d\n" , x / y);
+    }
 }
-
-
 int main()
 
 {
